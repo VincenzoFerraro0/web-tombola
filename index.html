@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+
+
+    <!-- ICON NEL TITLE -->
+    <link rel="shortcut icon" type="image/x-icon"
+        href="data:image/png;base64,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">
+    <title>Tombola</title>
+
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- DEBUG CSS -->
+    <link rel="stylesheet" href="./css/debug.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>tombola</h1>
+    </header>
+
+    <main>
+        <!-- contenitore -->
+        <div class="container">
+            <div class="container-table">
+                <!-- tabellone -->
+                <div class="table">
+                    <!-- pallina -->
+                    <div class="ball">
+                        <!-- numero -->
+                        <div class="number">
+                            1
+                        </div>
+                    </div>
+                    <!-- pallina -->
+                    <div class="ball">
+                        <!-- numero -->
+                        <div class="number">
+                            1
+                        </div>
+                    </div>
+                    <!-- pallina -->
+                    <div class="ball">
+                        <!-- numero -->
+                        <div class="number">
+                            1
+                        </div>
+                    </div>
+                    <!-- pallina -->
+                    <div class="ball">
+                        <!-- numero -->
+                        <div class="number">
+                            1
+                        </div>
+                    </div>
+                    <!-- pallina -->
+                    <div class="ball">
+                        <!-- numero -->
+                        <div class="number">
+                            1
+                        </div>
+                    </div>
+                    <!-- pallina -->
+                    <div class="ball">
+                        <!-- numero -->
+                        <div class="number">
+                            1
+                        </div>
+                    </div>
+                    <!-- pallina -->
+                    <div class="ball">
+                        <!-- numero -->
+                        <div class="number">
+                            1
+                        </div>
+                    </div>
+                    <!-- pallina -->
+                    <div class="ball">
+                        <!-- numero -->
+                        <div class="number">
+                            1
+                        </div>
+                    </div>
+                    <!-- pallina -->
+                    <div class="ball">
+                        <!-- numero -->
+                        <div class="number">
+                            1
+                        </div>
+                    </div>
+                    <!-- pallina -->
+                    <div class="ball">
+                        <!-- numero -->
+                        <div class="number">
+                            1
+                        </div>
+                    </div>
+                    <!-- pallina -->
+                    <div class="ball">
+                        <!-- numero -->
+                        <div class="number">
+                            1
+                        </div>
+                    </div>
+                    <!-- pallina -->
+                    <div class="ball">
+                        <!-- numero -->
+                        <div class="number">
+                            1
+                        </div>
+                    </div>
+                    <!-- pallina -->
+                    <div class="ball">
+                        <!-- numero -->
+                        <div class="number">
+                            1
+                        </div>
+                    </div>
+                    <!-- pallina -->
+                    <div class="ball">
+                        <!-- numero -->
+                        <div class="number">
+                            1
+                        </div>
+                    </div>
+                    <!-- pallina -->
+                    <div class="ball">
+                        <!-- numero -->
+                        <div class="number">
+                            1
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- estrazione -->
+            <div class="extration">
+                <div>2</div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
