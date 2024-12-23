@@ -1,49 +1,97 @@
 :root {
     --color-bgScreen: #19A495;
     --color-bgCell: #FFFFFF;
+    --color-btn1: #F6A102;
 }
 
 body {
     background-color: var(--color-bgScreen);
 }
 
-.container{
+header {
+    padding: 10px;
+    font-family: "Gochi Hand", serif;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+}
+
+/* container principale */
+.container {
     width: 80vw;
     margin: 0 auto;
     display: flex;
 
 }
-.cont-table{
+/* container tabellone */
+.cont-table {
     flex-basis: 80%;
 }
+
 .board {
     display: grid;
     grid-template-columns: repeat(10, 80px);
     gap: 10px;
     justify-content: center;
 
-  }
+}
 
-  .cell {
+.cell {
     width: 80px;
     aspect-ratio: 1;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     background-color: #f9f9f9;
-    font-size: 18px;
+    box-shadow: inset 4px -4px 0px 0px #dedede;
+               
+    
+    font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
-  }
+}
 
-  .cont-ext{
+/* container estrazione  */
+.cont-ext {
     flex-basis: 20%;
-  }
-  #current-number {
+    
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+ 
+}
+.cont-ext hr {
+    width: 80%;
+}
+
+
+#draw-button {
+    background-color: var(--color-btn1) ;
+    padding: 10px 20px;
+}
+
+.cell.red {
+    background-image: radial-gradient(red, white);
+    color: white;
+    
+    box-shadow:none;
+    
+}
+.controls {
+  position: relative;
+}
+
+#current-number {
+    text-align: center;
+    align-content: center;
+    font-size: 2rem;
+
     height: 100px;
     aspect-ratio: 1;
     background-color: var(--color-bgCell);
 
-  }
+}
