@@ -1,56 +1,49 @@
 :root {
     --color-bgScreen: #19A495;
+    --color-bgCell: #FFFFFF;
 }
 
 body {
     background-color: var(--color-bgScreen);
 }
 
-
-
-.container {
-    width: 80%;
+.container{
+    width: 80vw;
     margin: 0 auto;
     display: flex;
-}
 
-.container-table {
-    height: 700px;
-    background-color: green;
+}
+.cont-table{
     flex-basis: 80%;
-
 }
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 80px);
+    gap: 10px;
+    justify-content: center;
 
-.table {
+  }
+
+  .cell {
+    width: 80px;
+    aspect-ratio: 1;
+    border-radius: 50%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px 10px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
 
-}
-
-.ball {
-    background-color: white;
-
-    padding: 40px;
-
-
-    border-radius:  50%;
- 
-    flex-basis: calc(100% / 10 - 10px);
-    position: relative;
-
-
-
-}
-.number{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.extration {
-    height: 70vh;
-    background-color: blueviolet;
+  .cont-ext{
     flex-basis: 20%;
-}
+  }
+  #current-number {
+    height: 100px;
+    aspect-ratio: 1;
+    background-color: var(--color-bgCell);
+
+  }
