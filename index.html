@@ -22,16 +22,21 @@
     <!-- <link rel="stylesheet" href="./css/debug.css"> -->
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/style.css">
-    
+
+    <link rel="stylesheet" href="./css/media-query/media-mobile-f-s.css">
+    <link rel="stylesheet" href="./css/media-query/media-mobile-f-md.css">
+    <link rel="stylesheet" href="./css/media-query/media-mobile-f-lg.css">
 </head>
 
 <body>
     <header>
         <h1>tombola</h1>
+        
     </header>
+
     <main>
         <div class="container">
-
+            
             <!-- TABELLONE -->
             <div class="cont-table">
 
@@ -41,13 +46,14 @@
 
             <!-- ESTRAZIONE -->
             <div class="cont-ext">
-                <h2>Ultimo numero estratto</h2>
+                <h3>Ultimo numero estratto</h3>
                 <div class="controls">
                     <div id="current-number"></div>
                 </div>
                 <hr>
                 <button id="draw-button">Estrai</button>
                 <button id="reset-button">Reset</button>
+                <div id="messages"></div>
             </div>
 
         </div>

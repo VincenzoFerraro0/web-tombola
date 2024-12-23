@@ -1,0 +1,24 @@
+@media screen and (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+        align-items: flex-start;
+       
+    }
+
+    .board {
+        grid-template-columns: repeat(10, 60px);
+       
+    }
+    .cell {
+        width: 60px;
+    }
+    
+    .cont-table {
+        flex-basis: 80%;
+    }
+    /* container estrazione  */
+    .cont-ext {
+        flex-basis: 20%;
+
+    }
+}

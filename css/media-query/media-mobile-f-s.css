@@ -1,0 +1,11 @@
+@media screen  and (min-width: 480px){
+    .board {
+        display: grid;
+        grid-template-columns: repeat(5, 60px);
+       
+    }
+
+    .cell{
+        width: 60px;
+    }
+}
